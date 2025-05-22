@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BellIcon, UserCircleIcon, Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { BellIcon, Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
 interface HeaderProps {
@@ -7,7 +7,6 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
-  const [showSearch, setShowSearch] = useState(false);
 
   return (
     <header className="bg-white border-b border-gray-200 px-4 py-3">

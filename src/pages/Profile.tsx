@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import type { RootState } from '../../types';
 import {
   UserCircleIcon,
   ShieldCheckIcon,
@@ -11,6 +10,7 @@ import {
   CogIcon,
   ArrowRightOnRectangleIcon
 } from '@heroicons/react/24/outline';
+import type { RootState } from '../types';
 
 const Profile: React.FC = () => {
   const user = useSelector((state: RootState) => state.auth.user);
