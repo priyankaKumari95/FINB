@@ -26,7 +26,7 @@ The application is deployed at: [https://finb-tzl3.vercel.app/](https://finb-tzl
 - Redux
 
 ## Development
-- Time spent: 40 hours
+- Time spent: 10 hours
 - Key decisions documented in code comments
 
 ## Getting Started
