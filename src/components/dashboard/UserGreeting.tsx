@@ -30,7 +30,7 @@ const UserGreeting: React.FC = () => {
           <div>
             <h1 className="text-2xl font-semibold">
               Good {new Date().getHours() < 12 ? 'morning' : new Date().getHours() < 18 ? 'afternoon' : 'evening'},
-              {' '}{user?.name || 'Guest'}
+              {' '}{user?.name || 'Priyanka'}
             </h1>
             <p className="text-gray-600">Welcome back to your financial dashboard</p>
           </div>
