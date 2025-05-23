@@ -1,6 +1,8 @@
-# FINB - Financial Budgeting App
+# FINB - Financial Dashboard
 
-A modern financial application built with React, TypeScript, and Vite.
+## Live Demo
+
+The application is deployed at: [https://finb-tzl3.vercel.app/](https://finb-tzl3.vercel.app/)
 
 ## Features
 - Transaction tracking and categorization
