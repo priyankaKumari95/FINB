@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BellIcon, Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 

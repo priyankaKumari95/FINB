@@ -5,17 +5,7 @@ import type { RootState } from '../store';
 
 type TransactionType = 'All' | 'Income' | 'Expense' | 'Transfer';
 
-// Update Transaction interface
-interface Transaction {
-    id: string;
-    date: string;
-    category: string;
-    description: string;
-    amount: number;
-    type: 'Income' | 'Expense' | 'Transfer';
-    transactionType: 'Credit' | 'Debit';
-}
-
+// Remove the unused interface or implement it
 const Transactions: React.FC = () => {
     const [activeType, setActiveType] = useState<TransactionType>('All');
     const [searchQuery, setSearchQuery] = useState('');
@@ -70,8 +60,8 @@ const Transactions: React.FC = () => {
                 {['All', 'Income', 'Expense', 'Transfer'].map((type) => (
                     <button
                         key={type}
-                        className={`pb-2 px-1 text-sm ${activeType === type 
-                            ? 'border-b-2 border-blue-500 text-blue-500 font-medium' 
+                        className={`pb-2 px-1 text-sm ${activeType === type
+                            ? 'border-b-2 border-blue-500 text-blue-500 font-medium'
                             : 'text-gray-600 hover:text-gray-800'}`}
                         onClick={() => handleTypeChange(type as TransactionType)}
                     >
@@ -96,13 +86,12 @@ const Transactions: React.FC = () => {
                             <tr key={transaction.id} className="border-b hover:bg-gray-50 transition-colors duration-150">
                                 <td className="p-4 text-gray-600">{formatDate(transaction.date)}</td>
                                 <td className="p-4">
-                                    <span className={`px-3 py-1 rounded-full text-sm ${
-                                        transaction.type === 'Income' 
-                                            ? 'bg-green-100 text-green-800' 
-                                            : transaction.type === 'Expense' 
-                                                ? 'bg-red-100 text-red-800' 
+                                    <span className={`px-3 py-1 rounded-full text-sm ${transaction.type === 'Income'
+                                            ? 'bg-green-100 text-green-800'
+                                            : transaction.type === 'Expense'
+                                                ? 'bg-red-100 text-red-800'
                                                 : 'bg-blue-100 text-blue-800'
-                                    }`}>
+                                        }`}>
                                         {transaction.type}
                                     </span>
                                 </td>
@@ -110,13 +99,12 @@ const Transactions: React.FC = () => {
                                 <td className={`p-4 text-right font-medium text-gray-700`}>
                                     {transaction.transactionType}
                                 </td>
-                                <td className={`p-4 text-right font-medium ${
-                                    transaction.type === 'Income' 
-                                        ? 'text-green-600' 
-                                        : transaction.type === 'Expense' 
-                                            ? 'text-red-600' 
+                                <td className={`p-4 text-right font-medium ${transaction.type === 'Income'
+                                        ? 'text-green-600'
+                                        : transaction.type === 'Expense'
+                                            ? 'text-red-600'
                                             : 'text-blue-600'
-                                }`}>
+                                    }`}>
                                     {transaction.type === 'Income' ? '+' : '-'}${Math.abs(transaction.amount).toLocaleString()}
                                 </td>
                             </tr>
