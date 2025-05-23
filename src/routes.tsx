@@ -1,8 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Budgets from './pages/Budgets';
-import Goals from './pages/Goals';
-import Insights from './pages/Insights';
 import Transactions from './pages/Transactions';
 import Profile from './pages/Profile';
 import Layout from './components/layout/Layout';
