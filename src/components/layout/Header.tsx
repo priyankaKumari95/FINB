@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
           >
             <Bars3Icon className="h-6 w-6" />
           </button>
-          <h1 className="text-xl font-bold">CashFlow</h1>
+          <h1 className="text-xl font-bold">FINB</h1>
           <nav className="hidden md:flex space-x-4">
             <Link to="/" className="text-gray-600 hover:text-gray-900">Overview</Link>
             <Link to="/transactions" className="text-gray-600 hover:text-gray-900">Transactions</Link>
